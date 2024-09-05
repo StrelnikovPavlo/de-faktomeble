@@ -27,7 +27,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240905210023">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240905212035">
 
 	<!-- Прочие теги -->
 	<meta name="format-detection" content="telephone=no">
@@ -118,7 +118,7 @@
 				<div class="reviews__container">
 					<h2 class="reviews__title title">OPINIE</h2>
 					<div class="reviews__items">
-						<article class="item-reviews">
+						<div class="item-reviews">
 							<div class="item-reviews__head">
 								<div class="item-reviews__name">Maciej No.</div>
 								<div class="item-reviews__date">24/03/2024</div>
@@ -127,8 +127,8 @@
 								<img src="img/icons/star.svg" alt="star">
 							</div>
 							<div class="item-reviews__text">Bardzo zadowolony z mebli, wszystko wykonane perfekcyjnie. Doskonała robota, bardzo dziękuję.</div>
-						</article>
-						<article class="item-reviews">
+						</div>
+						<div class="item-reviews">
 							<div class="item-reviews__head">
 								<div class="item-reviews__name">Agnieszka Ko.</div>
 								<div class="item-reviews__date">10/07/2024</div>
@@ -137,8 +137,8 @@
 								<img src="img/icons/star.svg" alt="star">
 							</div>
 							<div class="item-reviews__text">Zamówione meble, wszystko odbyło się szybko i sprawnie. Mile zaskoczony obsługą, polecam</div>
-						</article>
-						<article class="item-reviews">
+						</div>
+						<div class="item-reviews">
 							<div class="item-reviews__head">
 								<div class="item-reviews__name">Mokryk An.</div>
 								<div class="item-reviews__date">18/04/2024</div>
@@ -147,7 +147,7 @@
 								<img src="img/icons/star.svg" alt="star">
 							</div>
 							<div class="item-reviews__text">Dziękujemy za wysokiej jakości pracę! Meble okazały się świetne, dokładnie takie, jak chcieliśmy</div>
-						</article>
+						</div>
 					</div>
 					<a href="reviews.html" class="reviews__more-link btn btn-yellow">Więcej opinii</a>
 				</div>
@@ -156,7 +156,7 @@
 				<div class="contacts__container">
 					<h2 class="contacts__title title">CONTACTY</h2>
 					<div class="contacts__body">
-						<form action="#" class="contacts__form form-contacts">
+						<form data-ajax action="components/sendmail/sendmail.php" method="POST" class="contacts__form form-contacts">
 							<div class="form-contacts__title">Skontaktuj się z nami</div>
 							<div class="form-contacts__row">
 								<div class="form-contacts__input">
@@ -180,7 +180,7 @@
 						</form>
 						<div class="contacts__info info-contacts">
 							<div class="info-contacts__block">
-								<a href="tel:+48 794 332 638" class="info-contacts__link">+48 794 332 638</a>
+								<a href="tel:+48794332638" class="info-contacts__link">+48 794 332 638</a>
 								<p class="info-contacts__lead">Chętnie odpowiemy na wszystkie pytania.</p>
 								<div class="info-contacts__griafic">
 									<strong>Godziny pracy:</strong>
@@ -222,7 +222,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20240905210023"></script>
+	<script src="js/app.min.js?_v=20240905212035"></script>
 </body>
 
 </html>
