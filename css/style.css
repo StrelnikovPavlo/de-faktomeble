@@ -399,31 +399,11 @@ button {
   color: #fff
 }
 .footer__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between
-}
-.footer__container span {
-  color: #8d8d8d;
-  font-size: 14px
+  text-align: center
 }
 .footer__copy {
   color: #8d8d8d;
   font-size: 14px
-}
-.footer__langs {
-  display: flex;
-  align-items: center;
-  -webkit-column-gap: 15px;
-  -moz-column-gap: 15px;
-  column-gap: 15px
-}
-.footer__lang {
-  text-transform: uppercase
-}
-.footer__lang._active {
-  color: #ffc700;
-  font-weight: 700
 }
 .page__section {
   min-height: 100vh
@@ -2519,10 +2499,6 @@ html.with-fancybox body.hide-scrollbar {
   .header__call {
     color: #fff
   }
-  .footer__container {
-    flex-direction: column-reverse;
-    row-gap: 15px
-  }
   .main::after {
     content: "";
     position: absolute;
@@ -2841,9 +2817,6 @@ html.with-fancybox body.hide-scrollbar {
     color: #ffc700
   }
   .header-small__call:hover {
-    color: #ffc700
-  }
-  .footer__lang:hover {
     color: #ffc700
   }
   .gallery__link-more:hover {
