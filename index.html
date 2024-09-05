@@ -27,7 +27,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240905212035">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240905222809">
 
 	<!-- Прочие теги -->
 	<meta name="format-detection" content="telephone=no">
@@ -45,7 +45,7 @@
 							<a href="tel:+48794332638" class="header__call-link">+48 794 332 638</a>
 						</div>
 						<div class="header__menu menu">
-							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<button type="button" class="menu__icon icon-menu" aria-label="Otwórz menu"><span></span></button>
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li data-goto='#about' class='menu__item'><a href="#about" class='menu__link _navigator-active'>O nas</a></li>
@@ -92,7 +92,7 @@
 			<section data-watch="navigator" id='gallery' data-fp-section class="page__section gallery">
 				<h2 class="gallery__title title title_white">GALERIA</h2>
 				<div class="gallery__slider swiper">
-					<button class="gallery__btn-arrow gallery__btn-arrow_prev"></button>
+					<button class="gallery__btn-arrow gallery__btn-arrow_prev" aria-label="Poprzedni obraz"></button>
 					<div class="gallery__items swiper-wrapper">
 						<a data-fancybox='gallery' href="img/gallery/01.webp" class="gallery__item swiper-slide">
 							<img data-src="img/gallery/01.webp" src="img/gallery/01.webp" alt="Produkcja i montaż mebli">
@@ -110,7 +110,7 @@
 							<img data-src="img/gallery/05.webp" src="img/gallery/05.webp" alt="Produkcja i montaż mebli">
 						</a>
 					</div>
-					<button class="gallery__btn-arrow gallery__btn-arrow_next"></button>
+					<button class="gallery__btn-arrow gallery__btn-arrow_next" aria-label="Następny obraz"></button>
 				</div>
 				<a href="gallery.html" class="gallery__link-more">Więcej zdjęć</a>
 			</section>
@@ -160,21 +160,21 @@
 							<div class="form-contacts__title">Skontaktuj się z nami</div>
 							<div class="form-contacts__row">
 								<div class="form-contacts__input">
-									<label class="input-label">Imię i nazwisko <span>*</span></label>
-									<input data-required autocomplete="off" data-error='Błąd' type="text" name="fullname" class="input">
+									<label for='fullname' class="input-label">Imię i nazwisko <span>*</span></label>
+									<input id='fullname' data-required autocomplete="off" data-error='Błąd' type="text" name="fullname" class="input">
 								</div>
 								<div class="form-contacts__input">
-									<label class="input-label">Numer telefonu <span>*</span></label>
-									<input data-required data-error='Błąd' autocomplete="off" type="tel" name="phone" class="input">
+									<label for='phone' class="input-label">Numer telefonu <span>*</span></label>
+									<input id="phone" data-required data-error='Błąd' autocomplete="off" type="tel" name="phone" class="input">
 								</div>
 							</div>
 							<div class="form-contacts__input">
-								<label class="input-label">Adres e-mail <span>*</span></label>
-								<input data-required='email' data-error='Błąd' autocomplete="off" type="email" name="email" class="input">
+								<label for='email' class="input-label">Adres e-mail <span>*</span></label>
+								<input id="email" data-required='email' data-error='Błąd' autocomplete="off" type="email" name="email" class="input">
 							</div>
 							<div class="form-contacts__input">
-								<label class='input-label'>Wiadomość <span>*</span></label>
-								<textarea data-required name="message" class='input' data-error='Błąd'></textarea>
+								<label for='message' class='input-label'>Wiadomość <span>*</span></label>
+								<textarea id="message" data-required name="message" class='input' data-error='Błąd'></textarea>
 							</div>
 							<button type="submit" class="form-contacts__submit btn">Wyślij</button>
 						</form>
@@ -199,10 +199,10 @@
 							<div class="info-contacts__socials">
 								<div class="info-contacts__socials-label">Sieci społecznościowe</div>
 								<div class="info-contacts__items">
-									<a href="https://www.instagram.com/defacto_meble_?igsh=MWU2NzBoOWNseWd1cQ==" target='_blank'><img src="img/socials/instagram.svg" alt="instagram"></a>
-									<a href="https://wa.me/+48794332638" target='_blank'><img src="img/socials/whatsapp.svg" alt="whatsapp"></a>
-									<a href="https://t.me/+48794332638" target='_blank'><img src="img/socials/telegram.svg" alt="telegram"></a>
-									<a href="https://www.facebook.com/profile.php?id=61559610246710" target='_blank'><img src="img/socials/faebook.svg" alt="facebook"></a>
+									<a href="https://www.instagram.com/defacto_meble_?igsh=MWU2NzBoOWNseWd1cQ==" target='_blank'><img src="img/socials/instagram.svg" alt="instagram" width='25' height='24'></a>
+									<a href="https://wa.me/+48794332638" target='_blank'><img src="img/socials/whatsapp.svg" alt="whatsapp" width='25' height='24'></a>
+									<a href="https://t.me/+48794332638" target='_blank'><img src="img/socials/telegram.svg" alt="telegram" width='25' height='24'></a>
+									<a href="https://www.facebook.com/profile.php?id=61559610246710" target='_blank'><img src="img/socials/faebook.svg" alt="facebook" width='25' height='24'></a>
 								</div>
 							</div>
 						</div>
@@ -222,7 +222,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20240905212035"></script>
+	<script src="js/app.min.js?_v=20240905222809"></script>
 </body>
 
 </html>
