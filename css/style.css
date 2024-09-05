@@ -332,15 +332,6 @@ button {
   transform: translateY(0);
   transition: all .4s ease 0s
 }
-.header._header-scroll {
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-  background-color: rgba(0,0,0,.4)
-}
-.header._header-show {
-  -webkit-transform: translateY(0);
-  transform: translateY(0)
-}
 .header__container {
   padding-top: 13px;
   padding-bottom: 13px;
@@ -409,7 +400,8 @@ button {
   min-height: 100vh
 }
 .main {
-  position: relative
+  position: relative;
+  overflow: hidden!important
 }
 .main__content {
   position: relative;
@@ -573,26 +565,27 @@ button {
   right: 10px
 }
 .gallery__link-more {
-  white-space: nowrap;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  -webkit-column-gap: 15px;
-  -moz-column-gap: 15px;
-  column-gap: 15px;
   position: absolute;
+  left: 50%;
   bottom: 40px;
-  right: 20%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   color: #fff;
-  background-color: #ffc700;
-  padding: 5px 10px
+  white-space: nowrap;
+  font-size: 18px;
+  padding: 5px 40px;
+  background-color: rgba(0,0,0,0)
 }
 .gallery__link-more::after {
   content: "";
-  width: 28px;
-  height: 12px;
-  display: block;
-  background: url(../img/icons/arrow-more.svg) right no-repeat
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc700;
+  transition: height .3s;
+  z-index: -1
 }
 .reviews {
   border-bottom: 1px solid #383532
@@ -2414,11 +2407,6 @@ html.with-fancybox body.hide-scrollbar {
   .main__content {
     height: 100vh
   }
-  .gallery__link-more {
-    right: 50%;
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%)
-  }
 }
 @media (max-width:47.99875em) {
   .menu__body {
@@ -2428,8 +2416,8 @@ html.with-fancybox body.hide-scrollbar {
     left: -100%;
     top: 0;
     overflow: auto;
-    padding: 3.125rem .9375rem .9375rem 1.875rem;
-    background-color: rgba(56,53,50,.8);
+    padding: 6.25rem .9375rem .9375rem 1.875rem;
+    background-color: rgba(56,53,50,.9);
     transition: left .3s
   }
   .menu__body::before {
@@ -2449,11 +2437,11 @@ html.with-fancybox body.hide-scrollbar {
     left: 0
   }
   .menu__item {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center
   }
   .menu__link {
-    font-size: 50px;
+    font-size: 30px;
     text-transform: uppercase
   }
   .icon-menu {
@@ -2820,7 +2808,10 @@ html.with-fancybox body.hide-scrollbar {
     color: #ffc700
   }
   .gallery__link-more:hover {
-    background-color: #d8a900
+    color: #383532
+  }
+  .gallery__link-more:hover::after {
+    height: 100%
   }
   .form-contacts__submit:hover {
     background-color: #545454
